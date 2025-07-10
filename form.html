@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Educational Admissional form</title>
+    
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #eee;
+      }
+      body {
+      background: url("https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80") no-repeat center;
+      background-size: cover;
+      }
+      h1, h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      }
+      h2 {
+      margin: 0 0 0 8px;
+      }
+      .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.5); 
+      }
+      .left-part, form {
+      padding: 25px;
+      }
+      .left-part {
+      text-align: center;
+      }
+      .fa-graduation-cap {
+      font-size: 72px;
+      }
+      form {
+      background: rgba(0, 0, 0, 0.7); 
+      }
+      .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      }
+      .info {
+      display: flex;
+      flex-direction: column;
+      }
+      input, select {
+      padding: 5px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #eee;
+      }
+      input::placeholder {
+      color: #eee;
+      }
+      option:focus {
+      border: none;
+      }
+      option {
+      background: black; 
+      border: none;
+      }
+      .checkbox input {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+      }
+      .checkbox a {
+      color: #26a9e0;
+      }
+      .checkbox a:hover {
+      color: #85d6de;
+      }
+      .btn-item, button {
+      padding: 10px 5px;
+      margin-top: 20px;
+      border-radius: 5px; 
+      border: none;
+      background: #26a9e0; 
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: #fff;
+      }
+      .btn-item {
+      display: inline-block;
+      margin: 20px 5px 0;
+      }
+      button {
+      width: 100%;
+      }
+      button:hover, .btn-item:hover {
+      background: #85d6de;
+      }
+      @media (min-width: 568px) {
+      html, body {
+      height: 100%;
+      }
+      .main-block {
+      flex-direction: row;
+      height: calc(100% - 50px);
+      }
+      .left-part, form {
+      flex: 1;
+      height: auto;
+      }
+      }
+    </style>
+  </head>
+          <script>
+ function admissionform() {
+                var name =
+                    document.forms.RegForm.Name.value;
+                var email =
+                    document.forms.RegForm.EMail.value;
+                var phone =
+                    document.forms.RegForm.Telephone.value;
+             
+                var password =
+                    document.forms.RegForm.Password.value;
+                let checkbox=
+                     document.getElementById("checkbox");
+                var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; 
+                var regPhone=/^\d{10}$/;                                        
+                var regName = /\d+$/g;                                    
+ 
+                if (name == "" || regName.test(name)) {
+                    window.alert("Please enter your name properly.");
+                   
+                    return false;
+                }
+ 
+             
+                 
+                if (email == "" || !regEmail.test(email)) {
+                    window.alert("Please enter a valid e-mail address.");
+                  
+                    return false;
+                }
+                  
+                if (password == "") {
+                    alert("Please enter your password");
+                   
+                    return false;
+                }
+ 
+                if(password.length <6){
+                    alert("Password should be atleast 6 character long");
+                   
+                    return false;
+ 
+                }
+                if (phone == "" || !regPhone.test(phone)) {
+                    alert("Please enter valid phone number.");
+                
+                    return false;
+                }
+
+
+         if ( checkbox.checked ) {
+          
+         } else {
+            alert("please agree on policy ");
+             return false;
+         }
+      
+                return true;
+            }
+
+</script>
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>Admission to our courses</h1>
+        <p>“Focus on your goal. Don't look in any direction but ahead.”</p>
+        
+      </div>
+     <form name="RegForm" onsubmit="return admissionform()"method="POST" action="index.html">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+          <h2>Admission here</h2>
+        </div>
+        <div class="info">
+          <input class="fname" type="text" name="Name" placeholder="Full name">
+          <input type="text" name="EMail" placeholder="Email">
+           <input type="password" name="Password" placeholder="Password">
+          <input type="text" name="Telephone" placeholder="Phone number">
+         
+          <select>
+            <option value="course-type" selected>Course type*</option>
+            <option value="short-courses">BCA</option>
+            <option value="featured-courses">DCE</option>
+            <option value="undergraduate">BBA</option>
+            <option value="diploma">D.PHARMA</option>
+            <option value="certificate">B.TECH</option>
+            <option value="masters-degree">M.BA</option>
+            <option value="postgraduate">PHD</option>
+          </select>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id = "checkbox" name="checkbox"><span>I agree to the <a href="policies.html">Admission Policy for this college.</a></span>
+        </div>
+        <button type="submit"value="send" name="Submit"  href="/">Submit</button>
+
+                
+
+      </form>
+    </div>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,426 @@
+*{margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+   
+    
+    }
+
+
+
+
+    /* NAV BAAR */
+    
+    ::selection{
+      color: #000;
+      background: rgb(145, 62, 62);
+    }
+    header{
+     display: flex;
+        height: 17vh;
+        font-family: 'Times New Roman', Times, serif;
+      
+    }
+    header nav .menu .logo img{
+
+      left: -150px;
+      position: relative;
+      top: 10px;
+      height: 200px;
+      width: 278px;
+
+    } 
+    header nav .menu ul{
+position:  relative;
+left: -50px;
+
+
+    }
+
+
+
+
+    nav{
+      position: fixed;
+      background:#222930;
+      width: 100%;
+      padding: 10px 0;
+      z-index: 12;
+    }
+    nav .menu{
+      max-width: 1250px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      height: 15vh;
+
+    }
+    
+
+    .menu .logo a{
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 35px;
+      font-weight: 600;
+    }
+    .menu ul{
+      display: inline-flex;
+    }
+    .menu ul li{
+      list-style: none;
+      margin-left: 7px;
+     
+    }
+    .menu ul li:first-child{
+      margin-left: 0px;
+    }
+    .menu ul li a{
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+      font-weight: 500;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      font-size: 22px;
+    }
+    .menu ul li a:hover{
+      background: #4EB1BA;
+      color:#E9E9E9;
+    }
+
+    footer{
+      padding-top: 60px;
+       padding-left: 200px;
+     box-sizing: border-box; 
+    line-height: 60px;
+    
+      }
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 70%;
+        }
+    .container-fluid{
+    margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    width: 1140px;
+    height: 100px;
+    
+      }
+      .nav-item a{
+    
+    position: relative;
+     
+      margin: -1px 24px;
+      font-size: 16px;
+      z-index: 9;
+      }
+
+
+
+  /* Beyond academics content*/
+        
+
+      
+
+      .container {
+        display: flex;
+        background-color: rgb(1, 27, 58);
+        height: 44vh;
+        width: 100%;
+        color: white;
+        align-items: center;
+     
+     
+    
+    }
+    .container h2{
+       
+        font-size: 30px;
+        font-family: 'Lato', sans-serif;
+        font-size: 43px;
+        padding-left: 200px;
+    
+    
+        
+    }
+    .container h2 .line{
+       
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 2px;
+            width: 60px;
+            background-color: greenyellow;
+            top: 35px;
+            border-radius: 59px;
+    }
+
+
+    /* INFRASTRUCTURE*/
+
+     .infrastructure{
+      margin-left: 190px;
+      display: inline-block;
+      font-family: 'Lato', sans-serif;
+      margin-top: 55px;
+
+
+    }
+    .infrastructure .heading {
+      position: relative;
+      left: 135px;
+      top: 50px;
+
+    }
+.infrastructure .heading h3{
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  font-weight: lighter; 
+}
+
+   
+
+
+  .infrastructure img{
+
+    position: relative;
+    bottom: 11px;
+   height: 100px;
+  }
+
+  .infrastructure .un{
+    position: relative;
+    left: 140px;
+    top: 80px;
+  }
+
+  .infrastructure .un h5 {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 125px;
+    
+background-color:#0b2545;
+color: white;
+font-family: 'Lato', sans-serif;
+font-weight: bolder;
+font-size: small;
+
+  }
+ .infrastructure hr {
+  position: relative;
+  left: 140px;
+  width: 650px;
+ } 
+ .content {
+
+  width: 825px;
+  margin-top: 60px;
+  margin-left: 205px;
+margin-right: 500px;
+line-height: 30px;
+color: #595959;
+ font-family: 'Lato', sans-serif;
+
+ }
+
+  
+ 
+ .content  p{
+  margin-bottom: 30px;
+  line-height: 30px;
+  color: #595959;
+ 
+
+
+ }
+
+ .content h4{
+
+  line-height: 30px;
+  color: #595959;
+  margin: 0 0 30px;
+  font-size: 20px;
+
+ 
+ }
+ .content img {
+margin-bottom: 40px;
+
+ }
+
+
+
+
+
+
+ 
+
+ .content ul{
+  margin-left: 50px;
+ }
+ .content .building img{
+
+  height: 327px;
+width: 609px;
+margin-left: 100px;
+border-radius: 25px;
+
+
+ }
+ .content .classroom img{
+  width: 732px;
+height: 465.3px;
+margin-left: 48px;
+border-radius: 56px;
+
+ 
+ }
+ .content .computer img{
+
+  width: 738px;
+  height: 398.3px;
+  margin-left: 51px;
+  border-radius: 68px;
+ }
+
+ .content .smart-class img{
+
+  width: 581px;
+  height: 443px;
+  margin-left: 100px;
+  border-radius: 55px;
+ }
+
+ .content .library img{
+  
+width: 700px;
+height: 572px;
+margin-left: 51px;
+border-radius: 70px;
+}
+
+ 
+
+ .content .art img{
+
+  width: 843px;
+    height: 551px;
+    margin-left: 49px;
+    border-radius: 84px;
+  }
+
+
+
+
+
+  
+
+
+
+  /* Footer */
+
+
+
+        
+
+        
+      footer h4{
+        color: grey;
+        font-size: 20px;
+      
+    
+      }
+      footer a{
+        color: rgb(6, 157, 216);
+      
+        text-decoration: none;
+    font-size: 17px;
+       
+    
+        
+      }
+    
+      footer{
+
+        height: 90vh;
+        width: 100vw;
+        background-color: #011b3a;
+        color: white;
+    }
+    
+    
+    
+      footer{
+      padding-top: 60px;
+       padding-left: 200px;
+     box-sizing: border-box; 
+    line-height: 60px;
+    
+  
+      }
+      
+    
+      footer ul{
+    
+    padding-left: 15px;
+    line-height: 40px;
+    
+       
+      }
+    
+    
+    footer ul li{
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    footer h3{
+        font-size: 30px;
+        display: inline;
+        color: gray;
+        border-bottom-color: rgb(129, 202, 0);
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+    
+      
+    
+    }
+    footer .copyright {
+        
+        text-align: center;
+       
+    
+    }
+    footer .copyright hr
+    {
+       
+        width: 75vw;
+    }
+    footer ul :hover {
+    
+    color: rgba(118, 110, 110, 0.697);
+    font-size: 20px;
+    list-style-type: disc;
+    
+    }
+    footer ul li a{
+      text-decoration: none;
+      color: #E9E9E9;
+  
+    }
+  
+  
+      
+      
+      
+      
+       
+      
+     
